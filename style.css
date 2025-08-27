@@ -1,0 +1,313 @@
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: "Quicksand", sans-serif; } body { background: #f7f9fc; color: #333; line-height: 1.6; } .navbar { display: flex; justify-content: flex-start; background: linear-gradient(to right, #1f3753, #1fc76a); padding: 20px 40px; position: fixed; top: 0; width: 100%; z-index: 100; } .navbar li { list-style: none; margin-left:20px; }
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      padding: 8px 12px;
+      border-radius: 5px;
+      transition: 0.3s;
+    }
+
+    .navbar a:hover {
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    .section-1 {
+      display: flex;
+      justify-content:center;
+      align-items:flex-end;
+      text-align: center;
+      background: url("15352e6d-6709-4af8-a88d-5c866ee9ebce.png") center/cover no-repeat;
+      height: 100vh;
+      color: white;
+      padding: 20px;
+    }
+
+    .section-1 h1 {
+      font-size: 60px;
+      margin-bottom: 15px;
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    }
+
+    .section-1 p {
+      font-size: 22px;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      background: #385143;
+      color: white;
+      padding: 12px 25px;
+      border-radius: 20px;
+      font-size: 18px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #3c7cc5;
+    }
+
+    .section-2 {
+      padding:60px 30px ;
+      text-align: center;
+    }
+
+    .section-2 h2 {
+      font-size: 36px;
+      margin-bottom: 30px;
+    }
+    #searchBar {
+  padding: 10px;
+  margin: 20px auto;
+  width: 50%;
+  display: block;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+body.dark-mode {
+  background: #1a1a1a;
+  color: white;
+}
+
+body.dark-mode .navbar {
+  background: linear-gradient(to right, #222, #444);
+}
+
+body.dark-mode .section-5 {
+  background: linear-gradient(to right, #222, #444);
+  color: white;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 25px;
+      justify-items: center;
+    }
+
+    .image-holder {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0,0, 0, 0.1);
+      padding: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .image-holder:hover {
+      transform: scale(1.10);
+    }
+
+    .image-holder img {
+      width: 100%;
+      border-radius: 8px;
+      height: 250px;
+      object-fit: cover;
+    }
+
+    /* Section 4: Popular Book Series */
+    .section-4 {
+      padding: 60px 40px;
+      text-align: center;
+      background: #f0f4ff;
+    }
+
+    .section-4 h2 {
+      font-size: 36px;
+      margin-bottom: 30px;
+    }
+
+    .brand-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .brand img {
+      height: 220px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      transition: transform 0.3s ease;
+    }
+
+    .brand img:hover {
+      transform: translateY(-10px);
+    }
+
+    .section-5 {
+      padding: 60px 40px;
+      background: linear-gradient(to right, #3c7cc5, #1fc76a);
+      color: white;
+      text-align: center;
+    }
+
+    .section-5 form {
+      max-width: 600px;
+      margin: 20px auto;
+      text-align: left;
+    }
+
+    .section-5 input[type=text],
+    .section-5 select,
+    .section-5 textarea {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 8px;
+    }
+
+    .section-5 input[type=submit] {
+      background: white;
+      color: #3c7cc5;
+      font-weight: 600;
+      border: none;
+      cursor: pointer;
+      border-radius: 8px;
+      padding: 12px 20px;
+      transition: 0.3s;
+    }
+
+    .section-5 input[type=submit]:hover {
+      background: #1fc76a;
+      color: white;
+    }
+
+    
+.swiper {
+  width: 100%;
+  max-width: 1200px; 
+  margin: 40px auto;
+}
+
+/* Make sure slides use the available width */
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Style each book card (swiper-slide) */
+.swiper-slide img {
+  width: 200px;
+  height:250px;
+  box-shadow: 0px 4px 6px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+  padding: 10px;
+  border-radius: 8px;
+
+}
+.swipper-slide{
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0,0, 0, 0.1);
+      padding: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    
+
+.swiper-slide img:hover {
+  transform: scale(1.10);
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  position:static;
+  color: #333;
+  margin:10px;
+}
+swiper .swiper-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* space between arrows & dots */
+  margin-top: 10px;
+}
+
+.swiper-pagination-bullet {
+  background: #555;
+}
+/* Mobile-first optimizations */
+@media (max-width: 480px) {
+  body {
+    font-size: 14px; /* smaller base text for readability */
+  }
+
+  .navbar {
+    flex-direction: column; /* stack items vertically */
+    align-items: center;
+    padding: 10px;
+  }
+
+  .navbar li {
+    margin: 10px 0;
+  }
+
+  .section-1 h1 {
+    font-size: 28px;  /* reduce big hero heading */
+  }
+
+  .section-1 p {
+    font-size: 16px;
+  }
+
+  .btn {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  #searchBar {
+    width: 80%; /* make it fit nicely on small screens */
+    font-size: 14px;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* smaller grid */
+    gap: 15px;
+  }
+
+  .image-holder img {
+    height: 180px; /* reduce fixed height */
+  }
+
+  .section-title {
+    font-size: 20px;
+  }
+
+  .swiper-slide img {
+    width: 140px;
+    height: 200px;
+  }
+
+  .brand img {
+    height: 160px;
+  }
+
+  .section-5 {
+    padding: 30px 20px;
+  }
+
+  .section-5 input[type=text],
+  .section-5 select,
+  .section-5 textarea {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .section-5 input[type=submit] {
+    font-size: 14px;
+    padding: 10px 16px;
+  }
+}

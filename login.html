@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <style>
+    /* Background */
+    body {
+      margin: 0;
+      font-family: "Segoe UI", sans-serif;
+      background: linear-gradient(135deg, #283c99, #c49aef);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    /* Card */
+    .login-container {
+      background: rgba(255, 255, 255, 0.9);
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      width: 350px;
+      text-align: center;
+    }
+
+    .login-container h2 {
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    /* Input fields */
+    .input-field {
+      width: 100%;
+      padding: 12px 15px;
+      margin: 10px 0;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      outline: none;
+      transition: 0.3s;
+      font-size: 14px;
+    }
+
+    .input-field:focus {
+      border-color: #667eea;
+      box-shadow: 0 0 5px rgba(102,126,234,0.6);
+    }
+
+    /* Button */
+    .btn {
+      width: 100%;
+      padding: 12px;
+      background: #667eea;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 15px;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #5a67d8;
+    }
+
+    /* Signup text */
+    .signup {
+      margin-top: 15px;
+      font-size: 14px;
+      color: #555;
+    }
+
+    .signup a {
+      color: #667eea;
+      text-decoration: none;
+    }
+
+    .signup a:hover {
+      text-decoration:underline;
+    }
+    .social-btn {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      font-size: 14px;
+      margin: 8px 0;
+      cursor: pointer;
+    }
+
+    .twitter {
+      background: #ef7325;
+    }
+
+    .facebook {
+      background: #1d2d4f;
+    }
+    
+  </style>
+<body>
+  <div class="login-container">
+    <h2>Welcome Back</h2>
+    <form>
+      <input type="email" class="input-field" placeholder="Email Address" required>
+      <input type="password" class="input-field" placeholder="Password" required>
+      <button type="submit" class="btn">Login</button>
+      <p>or</p>
+      <button type="button" class="social-btn twitter">Sign in with Google</button>
+        <button type="button" class="social-btn facebook">Sign in with Facebook</button>
+      <p class="signup">Don’t have an account? <a href="#">Sign up</a></p>
+    </form>
+  </div>
+</body>
+</html>
